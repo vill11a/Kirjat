@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Valinta</title>
+</head>
+
+<body>
+  <p>Uusi {{ tahti }} tähden arvio kirjasta {{ kirja }} ( {{ kirjailija }} )</p>
+  <p>
+    Kirjan genret:
+    <ul>
+      {% for genre in genres %}
+      <li>{{ genre }}</li>
+      {% endfor %}
+    </ul>
+  </p>
+  <p>
+    Arvio: <br />
+    {{ message }}
+  </p>
+</body>
+
+</html>
+
